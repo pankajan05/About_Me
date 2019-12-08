@@ -8,4 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="NameStyle">
+        <item name="android:layout_marginTop">@dimen/margin_size</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:paddingTop">@dimen/padding_size</item>
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:textSize">@dimen/textsize</item>
+    </style>
+
 </resources>
