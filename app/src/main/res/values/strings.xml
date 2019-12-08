@@ -2,4 +2,12 @@
     <string name="app_name">About_Me</string>
     <string name="name">Pankajan Satkunam</string>
     <string name="my_image">This is my image</string>
+    <string name="bio_text">Hi,\n\n
+    My name is pankajan satkunam.\n\n
+    I am from jaffna, Srilanka. I an software engineering undergraduate student from university of
+    Kelaniya. I am interested in gardening and farming. I like to explore new places and natural places
+    mountain.\n\n
+    Now currently I am learning android. For that I create this application.\n\n
+    I like to be learn new things and explore the tools.\n\n
+    My future goal is to be an Software Architect in 6 years. It is my ambition also.</string>
 </resources>

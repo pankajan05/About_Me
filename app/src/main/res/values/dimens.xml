@@ -3,4 +3,6 @@
     <dimen name="textsize">20sp</dimen>
     <dimen name="padding_size">5dp</dimen>
     <dimen name="margin_size">12dp</dimen>
+    <dimen name="padding_text">2dp</dimen>
+    <dimen name="padding_text2">15dp</dimen>
 </resources>
