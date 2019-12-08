@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="myName"
+            type="com.kajan.about_me.Myname"/>
+    </data>
+
+<LinearLayout
     android:id="@+id/code_name"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,13 +21,15 @@
         style="@style/NameStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/name"
+        android:text="@={myName.name}"
         android:textAlignment="center" />
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_size"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
@@ -26,17 +37,22 @@
 
     <Button
         android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:gravity="center|center_horizontal"
+        android:onClick="addNickName"
         android:text="Button"
         android:textAlignment="center" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/nickname"
+        android:text="@={myName.nickname}"
         android:layout_width="match_parent"
         android:layout_height="46dp"
-        android:text="TextView" />
+        android:textAlignment="center"
+        tools:visibility="invisible" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -69,3 +85,4 @@
     </ScrollView>
 
 </LinearLayout>
+</layout>
